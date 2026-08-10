@@ -212,7 +212,7 @@ const styles = StyleSheet.create({
   },
 
   valor: {
-    fontSize: 14,
+    fontSize: 15,
     fontWeight: "700",
     textAlign: "center",
   },

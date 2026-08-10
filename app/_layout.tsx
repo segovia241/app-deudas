@@ -38,14 +38,6 @@ function AppDrawer() {
       />
 
       <Drawer.Screen
-        name="resume/index"
-        options={{
-          drawerLabel: "Resumen",
-          title: "Resumen",
-        }}
-      />
-
-      <Drawer.Screen
         name="usuario/editar"
         options={{
           drawerLabel: "Usuario",

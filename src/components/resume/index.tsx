@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 import {
-    ActivityIndicator,
-    Alert,
-    RefreshControl,
-    ScrollView,
-    StyleSheet,
-    View,
+  ActivityIndicator,
+  Alert,
+  RefreshControl,
+  ScrollView,
+  StyleSheet,
+  View,
 } from "react-native";
 
-import { obtenerUsuario } from "../../src/database/repositories/usuario.repository";
-import { useAppTheme } from "../../src/theme/useAppTheme";
+import { obtenerUsuario } from "../../database/repositories/usuario.repository";
+import { useAppTheme } from "../../theme/useAppTheme";
 
-import CardsInfo from "../../src/components/resume/cardsInfo";
+import CardsInfo from "./cardsInfo";
 
 export default function Resume() {
   const { colors } = useAppTheme();

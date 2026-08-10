@@ -1,11 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  ActivityIndicator,
-  Alert,
-  Button,
-  StyleSheet,
-  View,
-} from "react-native";
+import { ActivityIndicator, Alert, StyleSheet, View } from "react-native";
 
 import { initDatabase } from "../src/database/db";
 
@@ -14,6 +8,7 @@ import {
   obtenerUsuario,
 } from "../src/database/repositories/usuario.repository";
 
+import Resume from "../src/components/resume";
 import { useAppTheme } from "../src/theme/useAppTheme";
 
 export default function Index() {
@@ -59,21 +54,7 @@ export default function Index() {
     );
   }
 
-  return (
-    <View
-      style={[
-        styles.container,
-        {
-          backgroundColor: colors.background,
-        },
-      ]}
-    >
-      <Button
-        title={theme === "light" ? "Cambiar a Dark" : "Cambiar a Light"}
-        onPress={toggleTheme}
-      />
-    </View>
-  );
+  return <Resume></Resume>;
 }
 
 const styles = StyleSheet.create({
