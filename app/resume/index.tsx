@@ -11,7 +11,7 @@ import {
 import { obtenerUsuario } from "../../src/database/repositories/usuario.repository";
 import { useAppTheme } from "../../src/theme/useAppTheme";
 
-import CardsInfo from "./cardsInfo";
+import CardsInfo from "../../src/components/resume/cardsInfo";
 
 export default function Resume() {
   const { colors } = useAppTheme();
